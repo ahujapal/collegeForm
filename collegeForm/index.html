@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+NAME: PALAK AHUJA
+STUDENT ID:  991542071
+-->
+<html>
+<head>
+<title> PALAK AHUJA </title>
+<link href = "css\assignment04.css" type = "text/css" rel = "stylesheet">
+</head>
+<body>
+<form onsubmit = "display()" name = "form1">
+<div class = "grid-container">
+<div class = "header" ><b> ASSIGNMENT#4 / PALAK AHUJA / 991542071 </b></div>
+<div class = "left">
+<h4> PERSONAL INFORMATION </h4>
+<label>LAST NAME: </label> <br>
+<input type = "text" name = "lname" value = "Ahuja" required> <br> <br>
+<label>FIRST NAME: </label><br>
+<input type = "text" name = "fname" value = "Palak" required><br> <br>
+<label>STUDENT NUMBER: </label> <br>
+<input type = "number" name = "snumber" value = "991542071"  > <br> <br>
+<label>EMAIL:</label> <br>
+<input type = "email" name = "email" value = "ahujapalak@gmail.com"> <br> <br>
+</div>
+<div class = "rightabove">
+<h4> SHERIDAN EXPERIENCE </h4>
+<label>START DATE: </label> <br>
+<input type = "date" name = "sdate" > <br> <br>
+<label>PREVIOUS YEARS OF POST SECONDARY EXPERIENCE: </label> <br>
+<input type = "number" name = "experience" value = "0"> <br> <br>
+<label> CAMPUS: </label>
+<select name="Campus"> 
+<option value = "Davis" selected="selected"> Davis </option>
+<option value = "Trafalgar"> Trafalgar </option>
+<option value = "HMC"> HMC </option>
+</select>
+<br> <br>
+</div>
+<div class = "rightbelow" >
+<h4>FINANCIAL DATA </h4>
+<label>AMOUNT OF MONEY RECIEVED (IN CAD): </label> <br>
+<input type = "number" name = "amount" > <br> <br>
+<label>SELECT SOURCES:</label> <br>
+<input type = "checkbox" name = "source1" value = "Scholarship" > Scholarship <br>
+<input type = "checkbox" name = "source2" value = "RESP" > RESP <br>
+<input type = "checkbox" name = "source3" value = "BRUSARY" > Brusary <br>
+<input type = "checkbox" name = "source4" value = "OSAP" > OSAP <br>
+<input type = "checkbox" name = "source5" value = "None" > None <br>
+</div>
+<div class = "bottom">
+<h4>COMMENTS</h4>
+<label>ADDITIONAL COMMENTS(OPTIONAL): </label> <br>
+<textarea name = "comments" cols = "200" rows = "4" > </textarea> <br> <br>
+</div>
+<div class = "submit">
+<input type = "submit" >
+<input type = "reset" >
+</div>
+</div>
+<script>
+function display(){
+alert("NAME: " + form1.fname.value + " " + form1.lname.value + "\nSTUDENT NUMBER: " +  form1.snumber.value)
+}
+</script>
+</form>
+</body>
+</html>
